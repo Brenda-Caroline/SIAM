@@ -6,6 +6,9 @@
     <title>Sistema de gestão de estoque</title>
     <link rel="stylesheet" href="relatorios.css">
 </head>
+    <?php
+		require './menu.php';
+	?>
 <body>
     <table>
         <thead>

@@ -40,7 +40,7 @@
               extract($row_usuario);
           }     
     ?>
-    
+   
  
         
     <form action="" METHOD="POST">
@@ -49,9 +49,10 @@
         <br>
         
         <div class="inputBox">
-            <input type="hidden" name="Nome" id="Nome" class="inputUser" value="<?php echo $row_usuario['Id'] ;?>">
+            <input type="hidden" name="Id" id="Id" class="inputUser" value="<?php echo $row_usuario['Id'] ;?>">
         </div>
         <div class="inputBox">
+            </select>
             <input type="text" name="Nome" id="Nome" class="inputUser" value="<?php echo $row_usuario['Nome'] ;?>">
             <label for="Nome" class="labelInput">Nome completo</label>
         </div>

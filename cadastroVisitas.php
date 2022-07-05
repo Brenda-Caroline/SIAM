@@ -55,7 +55,7 @@
                 <select name="Horario" id="Horario" class="inputUser2" >
                     <option value="Horario 1">06:00</option>
                     <option value="Horario 2">06:30</option>
-                    <option value="Hoario 3">07:00</option>
+                    <option value="Horario 3">07:00</option>
                 </select>
                 <label for="Horario" class="labelInput">Horario</label>
                 </div>

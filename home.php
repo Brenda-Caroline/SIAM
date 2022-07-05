@@ -3,38 +3,20 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width">
-		<LINK rel="stylesheet" href="home.css">
+		<link rel="stylesheet" href="home.css">
 		<title> Página Inicial</title>
 	</head>
 	<body> 
-		<header id="topo">
-			<br>
-			<img src="img/SIAM3.png" alt="Serrado" height="170" width="400">
-			<br><br>
-		</header>
-		<nav id="menu">
-			<ul>
-				<!-- <li><a href="vervisitas.php" >Visitas</a></li>
-				<li><a href="Checklist.html" >Checklist</a></li>
-				<li><a href=".html" >Ambientes</a></li>
-				<li><a href=".html" >Unidades</a></li>
-				<li><a href=".html" >Biodiversidade</a></li> -->
-
-				<li><a href="listaUsuarios.php" >Usuários</a></li> 
-				<li><a href="atualizaCadastro.php" >Atualiza Dados Usuários</a></li> 
-				<li><a href="cadastroVisitas.php" >Cadastrar Visitas</a></li> 
-				<li><a href="listaVisitas.php" >Listar Visitas</a></li> 
-				<li><a href="atualizaVisitas.php" >Atualizar Visitas</a></li> 
-				<li><a href="relatorios.php" >Relatórios</a></li>
-				<li><a href="index.php" >Sair</a></li> 
-			</ul> 
-		</nav>
-		
+		<?php
+			require './menu.php';
+		?>
+		<section id="secao">
 		<article>
 			<br><br>
 			<h1>
 				Parque Estadual Serra Nova
 			</h1>
+			
 			<table>
 				<tr>
 					<td><a href=".html"><img id="imagem" src="img/serrado.jpg" alt="Serrado"></a>Cachoeira do Serrado (Porteirinha)</td>
@@ -72,12 +54,6 @@
 			cidades, deve-se contatar a gerencia da UC para planejar a melhor portaria para chegar ao 
 			Parque e seus atrativos.
 		</article>
-		
-		
-		<br>
-		<footer>
-			<a href="#topo">Voltar</a>
-			<p> Desenvolvido por SIAM</p>
-		</footer>
+</section>
 	</body>		
 </html>
