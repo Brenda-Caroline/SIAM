@@ -33,11 +33,11 @@
       <img src="img/SIAM3.png" height="170" width="400"/>
       <br>
       <form name="Login" action="" method="post">
-          <fieldset>
+         <!--  <fieldset>-->
               <legend><b>Login</b></legend>
               <br>
               <div class="inputBox">
-                <input type="email" name="Email" id="Email" class="inputUser" required>
+                <input type="text" name="Email" id="Email" class="inputUser" required>
                 <label for="Email" class="labelInput">Email</label>
                 </div>
               <br><br>
@@ -45,11 +45,11 @@
                   <input type="password" name="Senha" id="Senha" class="inputUser" required>
                   <label for="password" class="labelInput">Senha</label>
               </div>
-          </fieldset>
+          <!-- </fieldset> -->
           <br>
           <a href="home.php"><button type="submit" value="entrar" name="SendLogin">Entrar</button></a>
       </form>
-        <br><br>
+        
         <a href="cadastroUsuario.php"><button>Cadastrar</button></a>
   </div>
   </body>

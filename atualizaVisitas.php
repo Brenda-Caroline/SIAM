@@ -18,7 +18,7 @@
 
         $formDados = filter_input_array(INPUT_POST, FILTER_DEFAULT);
 
-        if(!empty($formDados['SendCadvisita']))
+        if(!empty($formDados['SendCadvisita2']))
         {
             $uovisit = new Visita();
             $uovisit->formDados = $formDados;
@@ -26,16 +26,20 @@
 
             if($upp)
             {
-                echo '<script language="javascript">alert("Visita atualizado com sucesso!");</script>';
+                echo '<script language="javascript">alert("Visita atualizado com sucesso!");
+                </script>';
+               
             }else{
                 echo '<script language="javascript">alert("Erro: Visita não atualizado!");</script>';
             }
         }
+        $formDados = filter_input_array(INPUT_POST, FILTER_DEFAULT);
 
-        $listvisit = new Visita();
-        $list_visita = $listvisit->listar();
+            $lisvisit = new Visita();
+            $lisvisit->formDados = $formDados;
+            $list_visita = $lisvisit->listar2();
 
-        foreach ($list_visita as $row_visita)
+           foreach ($list_visita as $row_visita)
           {
               extract($row_visita);
           }
@@ -44,9 +48,8 @@
  
     <FORM action=""  METHOD="POST"> 
             <fieldset>
-                <legend><b>Reagendamento de visitas</b></legend>
+                <legend><b>Atualizar visitas</b></legend>
                 <br>
-                <input type="hidden" name="Id" value="<?php echo $row_visita['Id'] ;?>"/>
 
                 <div class="inputBox">
                     <input type="text" name="Nome" id="Nome" class="inputUser" value="<?php echo $row_visita['Nome'] ;?>" >
@@ -60,6 +63,7 @@
                 <br><br>
                 <div class="inputBox">
                 <select name="Circuito" id="Circuito" class="inputUser2" value="<?php echo $row_visita['Circuito'] ;?>">
+                    <option selected ><?php echo $row_visita['Circuito'] ;?></option>
                     <option value="Circuito 1">Circuito 1</option>
                     <option value="Circuito 2">Circuito 2</option>
                      <option value="Circuito 3">Circuito 3</option>
@@ -81,7 +85,8 @@
                     <label for="NumeroPessoas" class="labelInput">Número de pessoas</label>
                 </div>
                 <br><br>
-                <button type="submit" value="Cadastrar" name="SendCadvisita" id="submit">Editar</button>
+                <input type="hidden" name="Id" value="<?php echo $row_visita['Id'] ;?>"/>
+                <button type="submit" value="Cadastrar" name="SendCadvisita2" id="submit">Editar</button>
             </fieldset>
         </FORM>    
   </div>

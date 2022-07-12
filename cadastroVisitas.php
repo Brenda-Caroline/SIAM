@@ -29,7 +29,7 @@
         ?>
 
         <FORM action=""  METHOD="POST"> 
-            <fieldset>
+            <!-- <fieldset> -->
                 <legend><b>Agendamento de visitas</b></legend>
                 <br>
                 <div class="inputBox">
@@ -44,18 +44,17 @@
                 <br><br>
                 <div class="inputBox">
                 <select name="Circuito" id="Circuito" class="inputUser2" >
-                    <option value="Circuito 1">Circuito 1</option>
-                    <option value="Circuito 2">Circuito 2</option>
-                     <option value="Circuito 3">Circuito 3</option>
+                    <option value="Circuito 1">Circuito 1 - Cachoeira Serrado</option>
+                    <option value="Circuito 2">Circuito 2 - Talhado</option>
                 </select>
                 <label for="Circuito" class="labelInput">Circuito</label>
                 </div>
                 <br><br>
                 <div class="inputBox">
                 <select name="Horario" id="Horario" class="inputUser2" >
-                    <option value="Horario 1">06:00</option>
-                    <option value="Horario 2">06:30</option>
-                    <option value="Hoario 3">07:00</option>
+                    <option value="06:00">06:00</option>
+                    <option value="06:30">06:30</option>
+                    <option value="07:00">07:00</option>
                 </select>
                 <label for="Horario" class="labelInput">Horario</label>
                 </div>
@@ -66,7 +65,7 @@
                 </div>
                 <br><br>
                 <button type="submit" value="Cadastrar" name="SendCadVisit" id="submit">Cadastrar</button>
-            </fieldset>
+            <!-- </fieldset> -->
         </FORM>
     </div>
 </body>

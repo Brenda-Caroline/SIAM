@@ -1,13 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Relatórios</title>
     <link href="./styles.css" rel="stylesheet" type="text/css"> 
 </head>
 <body>
+  
+  <?php
+    require './menu.php';
+  ?>
+
+  <section id="secao">
 
     <div class="graficos" style="width: 100%; display: flex; flex-direction: column; align-items: center;">
 
@@ -15,20 +21,18 @@
           <canvas id="myChart"></canvas>
       </div>
     
-    <div class="legenda" style="width: 45%">
-        <p>
-            Eixo Y: Número de Fauna avistada
-        </p>
-        <p>Eixo X: Áreas Visitadas</p>
-    </div>
+      <div class="legenda" style="width: 45%">
+          <p>
+              Eixo Y: Número de Fauna avistada
+          </p>
+          <p>Eixo X: Áreas Visitadas</p>
+      </div>
   
       <div class="chart1" style="width: 45%" >
           <canvas id="myChart1"></canvas>
       </div>
     
-    
     </div>
-
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
@@ -105,6 +109,6 @@
            config1
        ); 
     </script>
-
+  </section>
 </body>
 </html>

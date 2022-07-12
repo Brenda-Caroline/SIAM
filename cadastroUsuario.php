@@ -41,7 +41,7 @@
     ?>
     
     <form action="" METHOD="POST">
-        <fieldset>
+        <!-- <fieldset> -->
             <legend><b>Formulário de Cadastro</b></legend>
             <br>
             <div class="inputBox">
@@ -76,7 +76,7 @@
             <br><br>
             <br><br>
             <button type="submit" value="Cadastrar" name="SendCaduser" id="submit">Cadastrar</button>
-        </fieldset>
+        <!-- </fieldset> -->
     </form>
   </div>
 </body>

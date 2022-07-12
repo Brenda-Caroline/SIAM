@@ -26,9 +26,10 @@
 
             if($upp)
             {
-                echo '<script language="javascript">alert("Cadastro atualizado com sucesso!");</script>';
+                echo '<script language="javascript">alert("Erro: Usuário não atualizado!");</script>';
             }else{
-                echo '<script language="javascript">alert("Erro: Produto não atualizado!");</script>';
+                echo '<script language="javascript">alert("Cadastro atualizado com sucesso!");</script>';
+                
             }
         }
 
@@ -49,7 +50,7 @@
         <br>
         
         <div class="inputBox">
-            <input type="hidden" name="Nome" id="Nome" class="inputUser" value="<?php echo $row_usuario['Id'] ;?>">
+            <input type="hidden" name="Id" id="Id" class="inputUser" value="<?php echo $row_usuario['Id'] ;?>">
         </div>
         <div class="inputBox">
             <input type="text" name="Nome" id="Nome" class="inputUser" value="<?php echo $row_usuario['Nome'] ;?>">
