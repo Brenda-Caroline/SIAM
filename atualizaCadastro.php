@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="paginaCadastro.css">
 </head>
 <body>
+
   <div class="box">
   
     <img src="img/SIAM3.png"/>
@@ -15,7 +16,7 @@
     <?php
       require './Conexao.php';
       require './funcoes.php';
-
+        
         $formDados = filter_input_array(INPUT_POST, FILTER_DEFAULT);
 
         if(!empty($formDados['SendCaduser']))
@@ -45,7 +46,7 @@
  
         
     <form action="" METHOD="POST">
-      <fieldset>
+      <!-- <fieldset> -->
         <legend><b>Atualiza Cadastro</b></legend>
         <br>
         
@@ -84,11 +85,9 @@
         <br><br>
         <br><br>
         <button type="submit" value="editar" name="SendCaduser" id="submit">Editar</button>
-      </fieldset>
-      
-      
-
+      <!-- </fieldset> -->
     </form>
   </div>
+
 </body>
 </html>

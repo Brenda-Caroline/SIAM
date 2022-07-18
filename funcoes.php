@@ -173,8 +173,20 @@
             }else{
                 return false;
             }
-            /* $retornoss = $result_update->fetchAll();
-            return $retornoss; */
+        }
+        
+        public function delvisita() {
+            $this->conexao = $this->connect();
+            $query_delete = "DELETE FROM visitas        
+                    WHERE Id = :Id";
+            $result_delete = $this->conexao->prepare($query_delete);
+            $result_delete->bindParam(':Id', $this->formDados['Id']);
+            $result_delete->execute();
+            if($result_delete->rowCount()){
+                return true;
+            }else{
+                return false;
+            }
         }
     }
 ?>

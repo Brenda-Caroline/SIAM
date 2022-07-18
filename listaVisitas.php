@@ -45,16 +45,19 @@
                         
                     ?>
                     <form class='row' action='atualizaVisitas.php' method='post'>
-                    <th><?php echo "" . $Id . "<br>";?></th>
-                    <td><?php echo "" . $Nome . "<br>";?></td>
-                    <td><?php echo "" . $DataVisita . "<br>";?></td>
-                    <td><?php echo "" . $Circuito . "<br>";?></td>
-                    <td><?php echo "" . $Horario . "<br>";?></td>
-                    <td><?php echo "" . $NumeroPessoas . "<br>";?></td>
-                    <td><input type="hidden" name="Id" value="<?php echo $row_visita['Id'] ;?>"/>
-                    <button type='submit' name="SendCadvisita"><img src="img/update.png" height="35" width="35"/></td>
-                        </form>
-                    
+                        <th><?php echo "" . $Id . "<br>";?></th>
+                        <td><?php echo "" . $Nome . "<br>";?></td>
+                        <td><?php echo "" . $DataVisita . "<br>";?></td>
+                        <td><?php echo "" . $Circuito . "<br>";?></td>
+                        <td><?php echo "" . $Horario . "<br>";?></td>
+                        <td><?php echo "" . $NumeroPessoas . "<br>";?></td>
+                        <td><input type="hidden" name="Id" value="<?php echo $row_visita['Id'] ;?>"/>
+                        <button type='submit' name="SendCadvisita"><img src="img/update.png" height="35" width="35"/></td>
+                    </form>
+                    <form class='row' action='delVisitas.php' method='post'>
+                        <td><input type="hidden" name="Id" value="<?php echo $row_visita['Id'] ;?>"/>
+                        <button type='submit' name="SendCadvisita"><img src="img/delete.png" height="35" width="35"/></td>
+                    </form>
                     </tr>
                     <tr>
                         <?php  }  ?>
