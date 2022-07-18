@@ -6,6 +6,9 @@
     <title>Lista de usuários</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+    <?php
+		require './menu.php';
+	?>
 <body>
     <?php
         require './menu.php'; 

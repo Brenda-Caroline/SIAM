@@ -54,6 +54,10 @@
 			cidades, deve-se contatar a gerencia da UC para planejar a melhor portaria para chegar ao 
 			Parque e seus atrativos.
 		</article>
+<<<<<<< HEAD
 		</section>
+=======
+</section>
+>>>>>>> 574610fc38341ee4e8a0041981d037cc47d5f191
 	</body>		
 </html>
