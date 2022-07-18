@@ -7,11 +7,14 @@
     <link rel="stylesheet" href="paginaCadastro.css">
 </head>
 <body>
-
+<?php
+    require './menu.php';
+?>
+<section id="secao">
   <div class="box">
   
-    <img src="img/SIAM3.png"/>
-    <br>
+    <!-- <img src="img/SIAM3.png"/>
+    <br> -->
 
     <?php
       require './Conexao.php';
@@ -89,6 +92,6 @@
       <!-- </fieldset> -->
     </form>
   </div>
-
+        </section>
 </body>
 </html>

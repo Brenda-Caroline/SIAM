@@ -8,7 +8,7 @@
 	<body> 
 		
 		<nav id="menu">
-      <img src="img/SIAM3.png" alt="Serrado" height="170" width="400">
+      <img src="img/SIAM3.png" id="logoMenu" alt="Serrado" height="170" width="400">
       
       <div id="lista">
         <ul>

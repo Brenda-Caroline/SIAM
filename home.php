@@ -10,13 +10,13 @@
 		<?php
 			require './menu.php';
 		?>
-		<section id="secao">
+	<section id="secao">
 		<article>
-			<br><br>
+			<br>
 			<h1>
 				Parque Estadual Serra Nova
 			</h1>
-			
+			<br>
 			<table>
 				<tr>
 					<td><a href=".html"><img id="imagem" src="img/serrado.jpg" alt="Serrado"></a>Cachoeira do Serrado (Porteirinha)</td>
@@ -54,10 +54,6 @@
 			cidades, deve-se contatar a gerencia da UC para planejar a melhor portaria para chegar ao 
 			Parque e seus atrativos.
 		</article>
-<<<<<<< HEAD
-		</section>
-=======
-</section>
->>>>>>> 574610fc38341ee4e8a0041981d037cc47d5f191
+	</section>
 	</body>		
 </html>

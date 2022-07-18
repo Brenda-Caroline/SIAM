@@ -7,7 +7,7 @@
 <body>
   <div class="box">
   
-    <img src="img/SIAM3.png"/>
+    <img src="img/SIAM3.png" id="logoCadastro"/>
     <br>
 
     <?php

@@ -1,17 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 #imagem {
-  width: 100%;
+  width: 90%;
 }
 
 body {
   background-color: #d9d9d9;
 }
 h1 {
-  font-size: 30px;
-  color: #0f6316;
+  font-size: 25px;
+  color: #545e55;
   font-family: Arial;
+  text-align: center;
 }
 td {
   text-align: center;
+  font-size: 13px;
 }
 
 /* header {
@@ -33,12 +41,15 @@ td {
 } */
 
 article {
-  width: 50%;
+  background-color: #ffffff;
+  width: 60%;
   text-align: justify;
   font-family: Arial;
+  font-size: 15px;
   color: #000000;
   margin: auto;
   display: block;
   line-height: 1.5;
-  padding-bottom: 100px;
+  padding: 30px;
+  border-radius: 15px;
 }
